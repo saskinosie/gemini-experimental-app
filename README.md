@@ -1,12 +1,11 @@
 # gemini-experimental-app
-
+running both gemini-exp-1206 and gemini-2 models
 
 
 # Gemini Chat Interface
 
-
 ## Overview
-The Gemini Chat Interface is a Streamlit application that allows users to interact with Google's Gemini Generative AI StreamLit app running both gemini-exp-1206 and gemini-2 models. The app supports:
+The Gemini Chat Interface is a Streamlit application that allows users to interact with Google's Gemini Generative AI running both gemini-exp-1206 and gemini-2.0-flash-exp models. The app supports:
 
 - Customizable system prompts for tailored AI behavior.
 - Uploading and processing of media files (images and videos).
@@ -39,6 +38,37 @@ This README provides an overview of the app's features, installation instruction
 
 ---
 
+## Installation
+
+### Prerequisites
+- Python 3.8+
+- API key for Google Generative AI (available from [Google Cloud Studio](https://aistudio.google.com/)).
+
+### Required Libraries
+Install the dependencies with:
+```bash
+pip install streamlit google-generativeai pillow
+```
+
+---
+
+## How to Run the Application
+
+1. Clone the repository or download the source code.
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
+
+2. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
+
+3. Open the app in your browser at `http://localhost:8501` (or the port specified in the terminal).
+
+---
+
 ## Usage
 
 ### Sidebar Settings
@@ -52,6 +82,12 @@ This README provides an overview of the app's features, installation instruction
 1. **Chat Input**: Type your message in the text box.
 2. **Media Upload**: Upload images or videos to interact with the model.
 3. **Message Display**: View the chat history with timestamps and AI responses.
+
+---
+
+## File Structure
+- `app.py`: Main Streamlit application.
+- `requirements.txt`: List of required libraries.
 
 ---
 
