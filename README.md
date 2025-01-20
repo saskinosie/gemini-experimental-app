@@ -1,5 +1,4 @@
 # gemini-experimental-app
-running both gemini-exp-1206 and gemini-2 models
 
 
 # Gemini Chat Interface
