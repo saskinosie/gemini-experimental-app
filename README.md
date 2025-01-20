@@ -1,6 +1,6 @@
 # Gemnini Experimental Reasoning Models 
 
-OpenAI recentkly relaeased o1 for use with their pro subscription, days later Google released their comparabale Experimental Gemini models FOR FREE!!! 
+OpenAI recently relaeased o1 for use with their pro subscription, days later Google released their comparabale Experimental Gemini models FOR FREE!!! 
 
 This app lets you take them for a test drive, all you need is a free Google Cloud Studio API key.
 
