@@ -8,7 +8,14 @@ import tempfile
 import os
 
 def local_css():
-    """Add custom CSS for styling."""
+
+    """Add custom CSS for styling chat messages and other UI elements.
+
+    - Hides certain Streamlit container styles for a cleaner UI.
+    - Defines custom styles for chat messages, including alignment, 
+      background colors, border radius, and timestamp styling.
+    """
+
     st.markdown("""
         <style>
             div[data-testid="stMarkdownContainer"] > style {
@@ -43,6 +50,14 @@ def local_css():
     """, unsafe_allow_html=True)
 
 def initialize_session_state():
+
+    """Initialize session state variables for the app.
+
+    - Ensures consistent behavior across sessions by setting default values
+      for variables such as chat object, user messages, system prompt,
+      selected model, and temperature.
+    - Avoids errors when accessing session state keys that may not exist.
+    """
     if "chat" not in st.session_state:
         st.session_state.chat = None
     if "messages" not in st.session_state:
@@ -55,6 +70,13 @@ def initialize_session_state():
         st.session_state.temperature = 0.7  # default temperature
 
 def create_chat():
+
+    """Start a Generative AI chat instance.
+
+    - Configures the Generative AI API with the user's API key.
+    - Creates a chat object using the selected model and generation
+      temperature, allowing for interactive conversations.
+    """
     if st.session_state.api_key:
         genai.configure(api_key=st.session_state.api_key)
         model = genai.GenerativeModel(
