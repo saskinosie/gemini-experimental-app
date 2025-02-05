@@ -215,7 +215,7 @@ def main():
         with st.expander("🤖 Model Selection", expanded=True):
             selected_model = st.selectbox(
                 "Choose Gemini Model:",
-                options=["gemini-exp-1206", "gemini-2.0-flash-exp"],
+                options=["gemini-exp-1206", "gemini-2.0-flash-exp", "gemini-2.0-flash-001"],
                 help="Select which Gemini model to use for chat"
             )
             
